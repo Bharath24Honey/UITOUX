@@ -1,0 +1,118 @@
+body {
+    background-color: rgba(239, 236, 233, 0.741);
+}
+
+.spaces {
+    margin: 0px 100px 0px 100px;
+}
+
+.brands {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    text-align: center;
+}
+
+.searchcar {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(255, 208, 21);
+    margin-left: 30px;
+    justify-content: space-around;
+    display: flex;
+    padding: 2px;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+li {
+    list-style-type: none;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.featureNav ul {
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.banners-services1 {
+    background-image: url(./images/banner1.jpeg);
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.banners-services2 {
+    background-image: url(./images/banner2.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.bannertext {
+    margin-top: 50px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.bannertext1 {
+    margin-top: 50px;
+    padding: 5px;
+
+}
+
+.bannertext1 h2 {
+    background-color: yellow;
+    color: black;
+    width: 250px;
+    font-weight: bolder;
+}
+
+.productsdis {
+    background-color: white;
+    height: 150px
+}
+
+.brands img {
+    width: 60px;
+}
+
+.brands p {
+    font-size: 10px;
+}
+
+footer {
+    background-color: black;
+    color: rgb(234, 234, 222);
+    padding: 20px;
+}
+
+.social-icon {
+    display: flex;
+}
+
+.social-icon li {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.brands img {
+    filter: grayscale(100%);
+}

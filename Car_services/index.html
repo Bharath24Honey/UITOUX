@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Nav  -->
+  <nav class="py-2 bg-body-tertiary border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Contacts</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Store location</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Track Order</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Compare: <b>2</b></a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Currency: <b>RS</b> </a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Language:<b>EN</b></a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="py-3 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <img src="./images/logo.png" alt="" width="120px">
+        <div class="boxcar">
+          <div class="searchcar">
+            <div class="carsvg">
+              <image src="./images/svg/car.svg" />
+            </div>
+            <div class="cartext">
+              <p>Select Vehicle</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn " type="submit">
+              <image src="./images/svg/search.svg" />
+            </button>
+          </form>
+        </div>
+      </a>
+      <form class="col-12 col-lg-auto  mb-lg-0" role="search">
+        <image src="./images/svg/heart.svg" class="mx-2" />
+        <image src="./images/svg/person.svg" class="mx-2" /> <span>Hello,login</span>
+        <image src="./images/svg/cart-20.svg" class="mx-2" /><span>Shopping Cart</span>
+      </form>
+    </div>
+  </header>
+  <nav class="py-2 bg-body-tertiary border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Megamenu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Account
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Call Us: <b>12345 09876</b></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- slide images  -->
+  <div class="spaces ">
+    <div id="myCarousel" class="carousel slide mb-6  my-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
+          aria-current="true"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="./images/slide-1.jpeg" alt="" width="100%">
+          <div class="container ">
+            <div class="carousel-caption text-start text-dark">
+              <h1 class="bg-warning" style="width: 180px; padding: 2px;">30% OFF</h1>
+              <h2 class="fw-bold">When Buying Parts</h1>
+                <h2 class="fw-bold">With Installation</h2>
+                <h4 class="opacity-75">Installation of part in the </h4>
+                <h4 class="opacity-75">services of our partners.</h4>
+                <p><a class="btn btn-lg btn-success " href="#">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide-1.jpeg" alt="" width="100%">
+          <div class="container ">
+            <div class="carousel-caption text-start text-dark">
+              <h1 class="bg-warning" style="width: 180px; padding: 2px;">30% OFF</h1>
+              <h2 class="fw-bold">When Buying Parts</h1>
+                <h2 class="fw-bold">With Installation</h2>
+                <h4 class="opacity-75">Installation of part in the </h4>
+                <h4 class="opacity-75">services of our partners.</h4>
+                <p><a class="btn btn-lg btn-success " href="#">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="./images/slide-1.jpeg" alt="" width="100%">
+          <div class="container ">
+            <div class="carousel-caption text-start text-dark">
+              <h1 class="bg-warning" style="width: 180px; padding: 2px;">30% OFF</h1>
+              <h2 class="fw-bold">When Buying Parts</h1>
+                <h2 class="fw-bold">With Installation</h2>
+                <h4 class="opacity-75">Installation of part in the </h4>
+                <h4 class="opacity-75">services of our partners.</h4>
+                <p><a class="btn btn-lg btn-success " href="#">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <!-- section 2  -->
+    <div class=" brands ">
+      <div class="brand-1">
+        <img src="./images/brand-1.png" alt="">
+        <p>AIMPARTS</p>
+      </div>
+      <div class="brand-2">
+        <img src="./images/brand-2.png" alt="">
+        <P>WINDENGIN</P>
+      </div>
+      <div class="brand-3">
+        <img src="./images/brand-3.png" alt="">
+        <p>TURBOELECTRIC</p>
+      </div>
+      <div class="brand-4">
+        <img src="./images/brand-4.png" alt="">
+        <P>STARTONE</P>
+      </div>
+      <div class="brand-5">
+        <img src="./images/brand-5.png" alt="">
+        <P>BRANDIX</P>
+      </div>
+      <div class="brand-6">
+        <img src="./images/brand-6.png" alt="">
+        <p>ABS-BRAND</p>
+      </div>
+      <div class="brand-7">
+        <img src="./images/brand-7.png" alt="">
+        <p>GREATCIRCIRCLE</p>
+      </div>
+      <div class="brand-8">
+        <img src="./images/brand-8.png" alt="">
+        <p>JUSTROMB</p>
+      </div>
+      <div class="brand-9">
+        <img src="./images/brand-9.png" alt="">
+        <p>FASTWHEELS</p>
+      </div>
+      <div class="brand-10">
+        <img src="./images/brand-10.png" alt="">
+        <p>STROYKA-X</p>
+      </div>
+      <div class="brand-11">
+        <img src="./images/brand-11.png" alt="">
+        <p>MISSION-51</p>
+      </div>
+      <div class="brand-12">
+        <img src="./images/brand-12.png" alt="">
+        <p>FUELCORP</p>
+      </div>
+      <div class="brand-13">
+        <img src="./images/brand-13.png" alt="">
+        <p>REDGATE</p>
+      </div>
+      <div class="brand-14">
+        <img src="./images/brand-14.png" alt="">
+        <p>BLOCKS</p>
+      </div>
+      <div class="brand-15">
+        <img src="./images/brand-15.png" alt="">
+        <p>BLACKBOX</p>
+      </div>
+      <div class="brand-16">
+        <img src="./images/brand-16.png" alt="">
+        <p>SQUAREGARAGE</p>
+      </div>
+    </div>
+
+    <!-- section 3 Features  -->
+
+    <div class="feature ">
+      <div class="productText">
+        <h4>Featured Products</h4>
+      </div>
+      <div class="featureNav">
+        <ul>
+          <li>All</li>
+          <li>Power Tools</li>
+          <li>Hand Tools</li>
+          <li>Plumbing</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+
+    <!-- products  -->
+
+    <div class=" text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+          <div class="product">
+            <div class="quickview ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                <path d="M14,15h-4v-2h3v-3h2v4C15,14.6,14.6,15,14,15z M13,3h-3V1h4c0.6,0,1,0.4,1,1v4h-2V3z M6,3H3v3H1V2c0-0.6,0.4-1,1-1h4V3z
+                 M3,13h3v2H2c-0.6,0-1-0.4-1-1v-4h2V13z" />
+              </svg>
+            </div>
+            <img src="./images/product-1.jpeg" alt="" width="170px">
+            <p>SKU: A43-44328-8</p>
+            <h5> Glossy Gray 19' Aluminium Whwwl AR-19</h5>
+            <p>⭐⭐⭐⭐ <span>26 reviews</span> </p>
+            <h5>$589</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product">
+            <div class="quickview">
+              <image src="./images/svg/quickview.svg" />
+            </div>
+            <img src="./images/product-2.jpeg" alt="" width="170px">
+            <p>SKU: 729-51203-B</p>
+            <h5> Twin Exhaust Pipe From Brandix Z54</h5>
+            <p>⭐⭐⭐⭐⭐ <span>9 reviews</span> </p>
+            <h5>$749</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product">
+            <div class="quickview">
+              <image src="./images/svg/quickview.svg" />
+            </div>
+            <img src="./images/product-3.jpeg" alt="" width="170px">
+            <p>SKU: 729-51203-B</p>
+            <h5> Twin Exhaust Pipe From Brandix Z54</h5>
+            <p>⭐⭐⭐⭐⭐ <span>9 reviews</span> </p>
+            <h5>$749</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product">
+            <div class="quickview">
+              <image src="./images/svg/quickview.svg" />
+            </div>
+            <img src="./images/product-4.jpeg" alt="" width="170px">
+            <p>SKU: 729-51203-B</p>
+            <h5> Twin Exhaust Pipe From Brandix Z54</h5>
+            <p>⭐⭐⭐⭐⭐ <span>9 reviews</span> </p>
+            <h5>$749</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- banners   -->
+
+    <div class="">
+      <div class="row">
+        <div class="col banners-services1">
+          <div class="bannertext">
+            <h2 class="text-warning" style="font-weight: bolder;">MOTOR OILS </h2>
+            <p class="text-white">Synthetic motor oil with free shipping <br> Friction free life guaranteed</p>
+            <button type="button" class="btn btn-danger">Shop Now</button>
+          </div>
+        </div>
+        <div class="col banners-services2">
+          <div class="bannertext1">
+            <h2 class="text-dark">SAVE UP TO $40 </h2>
+            <p class="text-white">Synthetic motor oil with free shipping <br> Friction free life guaranteed</p>
+            <button type="button" class="btn btn-danger">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section -4  -->
+
+    <!-- Top Rates Products  -->
+    <div class="row mt-5 g-3">
+      <div class="col">
+        <h3>Top Rates Products</h3>
+        <hr>
+        <div class="productsdis">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+              <path d="M14,15h-4v-2h3v-3h2v4C15,14.6,14.6,15,14,15z M13,3h-3V1h4c0.6,0,1,0.4,1,1v4h-2V3z M6,3H3v3H1V2c0-0.6,0.4-1,1-1h4V3z
+             M3,13h3v2H2c-0.6,0-1-0.4-1-1v-4h2V13z" />
+            </svg>
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-6.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Fantastic 12-Stroke Engine Wit A Power of 1991 hp</h6>
+              <span>⭐⭐⭐⭐ 17 reviews</span>
+              <h5>$2579.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="productsdis mt-4">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+              <path d="M14,15h-4v-2h3v-3h2v4C15,14.6,14.6,15,14,15z M13,3h-3V1h4c0.6,0,1,0.4,1,1v4h-2V3z M6,3H3v3H1V2c0-0.6,0.4-1,1-1h4V3z
+             M3,13h3v2H2c-0.6,0-1-0.4-1-1v-4h2V13z" />
+            </svg>
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-7.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Fantastic 12-Stroke Engine Wit A Power of 1991 hp</h6>
+              <span>⭐⭐⭐⭐ 17 reviews</span>
+              <h5>$327.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="productsdis mt-4">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <image src="./images/svg/quickview.svg" />
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-8.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Fantastic 12-Stroke Engine Wit A Power of 1991 hp</h6>
+              <span>⭐⭐⭐⭐ 17 reviews</span>
+              <h5>$4.00 <del> $8.00</del></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Offers  -->
+      <div class="col">
+        <h3>Special Offers</h3>
+        <hr>
+        <div class="productsdis">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <image src="./images/svg/quickview.svg" />
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-9.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Brandix Manual Five Speed Gearbox</h6>
+              <span>⭐⭐⭐⭐ 6 reviews</span>
+              <h5>$78.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="productsdis mt-4">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <image src="./images/svg/quickview.svg" />
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-10.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Set of Car Floor Brandix Z4</h6>
+              <span>⭐⭐⭐⭐ 16 reviews</span>
+              <h5>$78.00 <span><del>$94.00</del></span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="productsdis mt-4">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <image src="./images/svg/quickview.svg" />
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-11.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Taillights Brandix Z54</h4>
+                <span>⭐⭐⭐⭐ 8 reviews</span>
+                <h5>$60.00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bestseller   -->
+
+      <div class="col">
+        <h3>Bestseller</h3>
+        <hr>
+        <div class="productsdis">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <image src="./images/svg/quickview.svg" />
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-12.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Brandix Engine Block Z4</h6>
+              <span>⭐⭐⭐ 3 reviews</span>
+              <h5>$479.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="productsdis mt-4">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <image src="./images/svg/quickview.svg" />
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-13.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Brandix Clutch Discs Z175</h6>
+              <span>⭐⭐⭐⭐ 7 reviews</span>
+              <h5>$345.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="productsdis mt-4">
+          <div class="quickview pt-3 px-3" style="display: flex; justify-content: right;">
+            <image src="./images/svg/quickview.svg" />
+          </div>
+          <div class="d-flex">
+            <div class="productimg">
+              <img src="./images/product-9.jpeg" alt="" width="100px">
+            </div>
+            <div class="producttxt mx-3 mt-2">
+              <h6>Brandix Manual Five Speed Gearbox</h4>
+                <span>⭐⭐⭐ 7 reviews</span>
+                <h5>$879.00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- section 5  -->
+
+    <div class="row mt-5">
+      <div class="col">
+        <div class="d-flex">
+          <div class="shippingimg">
+            <image src="./images/svg/free-delivery.svg" />
+          </div>
+          <div class="shippingtext mx-4">
+            <h5>Free Shipping</h5>
+            <p>For orders from $50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex">
+          <div class="supportimg">
+            <image src="./images/svg/24-hours.svg" />
+
+          </div>
+          <div class="supporttext mx-3">
+            <h5>Support 24/7</h5>
+            <p>Call us anytime</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex">
+          <div class="saftyimg">
+            <image src="./images/svg/payment-security.svg" />
+          </div>
+          <div class="saftytext mx-3">
+            <h5>100% Safety</h5>
+            <p>Only Secure Payments</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex">
+          <div class="offerimg">
+            <image class="my-svg-alternate" src="./images/svg/tag.svg" />
+          </div>
+          <div class="offertext">
+            <h5>Hot Offers</h5>
+            <p>Discounts up to 90%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- last  -->
+  </div>
+
+  <!-- footer  -->
+
+  <footer class="mt-5">
+    <div class="spaces">
+      <div class="row">
+        <div class="col">
+          <h5>Contact Us</h5>
+          <p>Hi, we are always open for cooperation and suggestion, contact us in one of the ways below:</p>
+        </div>
+        <div class="col-2">
+          <h5>Information</h5>
+          <p>About Us</p>
+          <p>Delivery Information</p>
+          <p>Privacy Policy</p>
+          <p>Brands</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="col-2">
+          <h5>My Accout</h5>
+          <p>Store Location</p>
+          <p>Order History</p>
+          <p>Wish List</p>
+          <p>Newsletter</p>
+        </div>
+        <div class="col">
+          <h5>Newsletter</h5>
+          <p>Enter Your email address below to subscribe to our newsletter and keep up to date with discounts and
+            special offers.</p>
+          <input type="text" placeholder="user@gmail.com"> <button
+            style="border: 0px solid green; background-color: green; padding: 2px;">Subscribe</button>
+          <p class="mt-2">Follow us on Social Media:</p>
+          <ul class="social-icon mt-4">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <i class="fa-brands fa-facebook fa-2xl" style="color: #1064f4;"></i>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <i class="fa-brands fa-twitter fa-2xl" style="color: #e8ecf2;"></i>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <i class="fa-brands fa-youtube fa-2xl" style="color: #ee1b1b;"></i>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #d85a5a;"></i>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cards-upi bg-dark ">
+    <div class="spaces pt-2">
+      <div class="d-flex justify-content-between">
+        <div class="cardstext">
+          <span class="text-light">Powered by <b>React/Node.js</b> -Designed by <b>UITOUX Solutions</b></span>
+        </div>
+        <div class="cardsimg">
+          <img src="./images/payments.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
